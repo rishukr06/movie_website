@@ -1,0 +1,10 @@
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | varchar(255) | NO   | PRI | NULL    |       |
+| name       | varchar(255) | NO   |     | NULL    |       |
+| Director   | varchar(255) | NO   |     | NULL    |       |
+| year       | varchar(255) | YES  |     | NULL    |       |
+| poster     | varchar(255) | YES  |     | NULL    |       |
+| rating     | varchar(255) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
