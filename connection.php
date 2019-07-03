@@ -1,4 +1,4 @@
 <?php
 //connecting to database
-	$con = mysqli_connect("localhost","root","rdb404#rdx","R2D2") or die("Error while connecting");
+	$con = mysqli_connect("localhost","<userName>","<password>","<databaseName>") or die("Error while connecting");
 ?>
