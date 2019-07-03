@@ -1,0 +1,339 @@
+@media screen and (max-width: 767px) {
+
+	.movie-box
+	{
+		display: block!important;
+		justify-content: center;
+	}
+	.footer
+	{
+		display: block!important;
+	}
+	.left,.right{width:100%!important;}
+	.right{border-left:0!important;border-top:2px solid #000 !important;}
+	.movie-card-container{ position: relative!important; margin-top:8px!important; left:50%!important;transform: translateX(-50%)!important;}
+	.divider{display: none!important;}
+	.email-box
+	{
+		width: 300px!important;
+	}
+	.r-feed
+	{
+		width: 95%!important;
+	}
+	h1{font-size: 30px!important;}
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+.bg
+{
+	background:#313131	;
+	background-position: top left;
+	background-size: 100% 100%;
+}
+.connecct-icons
+{
+	text-align: left;
+	width: 100%;
+	background: transparent;
+	margin-top: 20px;
+	font-size: 30px;
+	letter-spacing: 6px;
+	padding-bottom: 10px;
+}
+.container
+{
+	margin-top: 10px;
+}
+.searchbox
+{
+	width: 100%;
+	height:auto;
+	background-color: transparent;
+	border:none;
+	border-radius: 5px;
+	display: flex;
+}
+.search
+{
+	width: 100%!important;
+	padding: 10px;
+	background-color: #555;
+	border:none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	transition: 0.5s;
+}
+.fa-search
+{
+	position: relative;
+	align-self: center;
+}
+.search-icon
+{
+	text-align: center;
+	padding-top: 15px;
+	width: 10%;
+	background-color:#007bff ;
+	justify-content: center !important;
+	align-items: center;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	min-width: 70px;
+	transition:0.5s;
+}
+.search-icon:hover
+{
+	background: blue;
+}
+.navigation{
+	background-color:#191919;
+	padding: 10px;
+	border-radius:5px;
+	text-align: right;
+}
+a{ text-decoration: none!important; padding: 10px 5px;outline:none;}
+.nav-menu
+{
+	margin-top: 30px;
+	text-align: right;
+	
+}
+.movie-box
+{
+	margin-top: 10px;
+	display: flex;
+}
+.movie-card-container
+{
+	height: 280px;
+	width: 190px;
+	border-radius: 5px;
+	background-color:transparent;
+	transition:0.5s;
+	overflow: hidden;
+	margin-left:10px;
+}
+.form
+{
+	width: 90%!important;
+	background-color: #555;
+	border:none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin: 0;
+}
+.movie-card
+{
+	height: 240px;
+	width: 190px;
+	background-color: #999;
+	background-position:top left;
+	background-size: 100% 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.movie-card-container:hover
+{
+	box-shadow: 0px 0px 3px 3px #161616;
+	transform: scale(1.05);
+}
+.movie-name
+{
+	color: #007bff ;
+	padding-top: 8px;
+	text-align: center;
+}
+.movie-details
+{
+	height: 120px;
+	width: 100%;
+	background-color: #000;
+	transition: 0.5s;
+	color:#888;
+	cursor: pointer;
+}
+.movie-details:hover
+{
+	transform: translateY(-70px);
+}
+.movie-cast
+{
+	padding-top: 3px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.movie-rating,.movie-year 
+{
+	padding-left: 10px;
+	font-size: 16px;
+}
+.tilte
+{
+	margin-top:3px;
+	width: 100%;
+	background-color: #444;
+	color: #007bff ;
+	font-size: 20px;
+	font-weight: 900;
+	font-style: bold;
+	font-family: ;
+	border-radius: 5px;
+}
+#title
+{
+	padding-left: 10px;
+}
+.empty_result
+{
+	width: 100%;
+	background-color: #666;
+	color: #fff;
+	padding: 10px;
+}
+.footer
+{
+	width: 100%;
+	background-color: #111;
+	height: ;
+	display: flex;
+	padding: 10px;
+	margin-top:20px;
+	overflow: hidden; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.left
+{
+	width: 50%;
+	height: 300px;
+	background-color: ;
+}
+.right
+{
+	width: 50%;
+	height: auto;
+	background:;
+	border-left: 2px solid #000;
+	padding: 10px;
+}
+#rating
+{
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+	margin-left: 8px;
+}
+.r-feed
+{
+	background-color: #444;
+	color: #fff;
+	padding: 5px;
+	margin-top:10px;
+	border-radius: 5px;
+	outline: none;
+	border:none;
+	margin-left: 8px;
+	width: 80%;
+}
+.fa-linkedin:hover
+{
+	color: #0077B5;
+	cursor: pointer;
+}
+.fa-twitter-square:hover
+{
+	color: #00acee;
+	cursor: pointer;
+}
+.fa-twitter:hover
+{
+	color: #00acee;
+	cursor: pointer;
+}
+.fa-facebook-square:hover
+{
+	color: #3b5998;
+	cursor: pointer;
+}
+.fa-facebook:hover
+{
+	color: #3b5998;
+	cursor: pointer;
+}
+.fa-instagram:hover
+{
+	color: #ff007e;
+	cursor: pointer;
+}
+.fa-youtube:hover
+{
+	color: #ff0000;
+	cursor: pointer;
+}
+.subscribe
+{
+	color: #fff;
+	display: flex;
+	margin-top: 20px;
+	padding-bottom: 25px;
+}
+.subscribe:focus
+{
+	border-color: green;
+}
+.email-title
+{
+	padding: 10px;
+	font-size: 18px;
+}
+.email-box
+{
+	border:1px solid #282828;
+	border-radius: 5px;
+	width: 350px;
+	display: flex;
+}
+.submit
+{
+	width: 15%;
+	cursor: pointer;
+}
+.email
+{
+	background: transparent;
+	outline: none;
+	border: 0;
+	padding: 10px;
+	width: 85%;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.fa-arrow-right
+{
+	position: relative;
+	top:6.28px;
+	margin-left: 10px;
+	font-size: 30px;
+	color: #286090;
+	background: transparent;
+}
+.follow
+{
+	color: #888;
+	margin-top: 30px;
+	padding-bottom: 2px;
+}
+#about{
+	display: none;
+}
