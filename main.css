@@ -12,6 +12,7 @@
 	.left,.right{width:100%!important;}
 	.right{border-left:0!important;border-top:2px solid #000 !important;}
 	.movie-card-container{ position: relative!important; margin-top:8px!important; left:50%!important;transform: translateX(-50%)!important;}
+	.col-sm-2{max-width:190px!important;min-width:190px!important;}
 	.divider{display: none!important;}
 	.email-box
 	{
@@ -110,13 +111,14 @@ a{ text-decoration: none!important; padding: 10px 5px;outline:none;}
 }
 .movie-box
 {
-	margin-top: 10px;
-	display: flex;
+	
 }
 .movie-card-container
 {
+    padding:0!important;
+    margin-top: 10px;
 	height: 280px;
-	width: 190px;
+	width: 190;
 	border-radius: 5px;
 	background-color:transparent;
 	transition:0.5s;
@@ -143,6 +145,7 @@ a{ text-decoration: none!important; padding: 10px 5px;outline:none;}
 	border-top-right-radius: 5px;
 
 }
+
 .movie-card-container:hover
 {
 	box-shadow: 0px 0px 3px 3px #161616;
@@ -156,8 +159,8 @@ a{ text-decoration: none!important; padding: 10px 5px;outline:none;}
 }
 .movie-details
 {
-	height: 120px;
-	width: 100%;
+	height: 123px;
+	width: 190px;
 	background-color: #000;
 	transition: 0.5s;
 	color:#888;
@@ -165,18 +168,18 @@ a{ text-decoration: none!important; padding: 10px 5px;outline:none;}
 }
 .movie-details:hover
 {
-	transform: translateY(-70px);
+	transform: translateY(-60px);
 }
 .movie-cast
 {
-	padding-top: 3px;
+	padding-top: 4px;
 	padding-left: 10px;
-	font-size: 16px;
+	font-size: 13px;
 }
 .movie-rating,.movie-year 
 {
 	padding-left: 10px;
-	font-size: 16px;
+	font-size: 13px;
 }
 .tilte
 {
