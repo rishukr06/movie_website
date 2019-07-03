@@ -52,7 +52,7 @@
 	<div class="footer">
 		<div class="left">
 
-			<div class="subscribe" id="connect">
+	<div class="subscribe" id="connect">
           <form id="subsForm" action="" method="post">
           <div class="email-title">Stay Connected</div>
           <div class="email-box" id="emailbox">
