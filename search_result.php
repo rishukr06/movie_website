@@ -5,24 +5,22 @@ if(isset($_POST['movie_name']))
 		include './connection.php';
 		extract($_POST);
 		$title = $movie_name;
-		$sql1 = "select * from movies where name LIKE '$movie_name%'";
+		$sql1 = "select * from movies where name LIKE '$movie_name%' ORDER BY year";
 		$result1 = mysqli_query($con,$sql1) or die ("database error".mysqli_error($con));
 		while($row = mysqli_fetch_array($result1))
 		{
 			echo "
 		
 		
-			<div class='movie-card-container'>
+			<div class=' col-sm-2 movie-card-container'>
 				<div class='movie-card' style='background-image:url(".$row[poster].")'></div>
 				<div class='movie-details'>
 					<div class='movie-name'>".$row[name]."</div>
-					<div class='movie-cast'>Casts: ".$row[malecast].",".$row[femalecast]."</div>
+					<div class='movie-cast'>Director: ".$row[malecast]."</div>
 					<div class='movie-year'>Year: " .$row[year]."</div>
-					<div class='movie-rating'>Rating: (".$row[rating].")
+					<div class='movie-rating'>IMDb : <span style='color:yellow;'>&#9733;</span> ".$row[rating]."/10
 						 ";
-							for ($i=0; $i < $row[rating]; $i++) { 
-								echo "<span style='color:yellow;'>&#9733;</span>";
-							}
+						
 						echo "
 					</div>
 				</div>
@@ -42,24 +40,23 @@ if(isset($_POST['movie_name']))
 	else
 	{
 		$title = "Letest uploads";
-		$sql1 = "select * from movies ORDER BY rating DESC LIMIT 2";
+		$sql1 = "select * from movies ORDER BY rating DESC LIMIT 10";
 		$result1 = mysqli_query($con,$sql1) or die ("database error".mysqli_error($con));
 		while($row = mysqli_fetch_array($result1))
 		{
 			echo "
 		
 		
-			<div class='movie-card-container'>
+			<div class='col-sm-2 movie-card-container'>
 				<div class='movie-card' style='background-image:url(".$row[poster].")'></div>
 				<div class='movie-details'>
 					<div class='movie-name'>".$row[name]."</div>
-					<div class='movie-cast'>Casts: ".$row[malecast].",".$row[femalecast]."</div>
-					<div class='movie-year'>Year:" .$row[year]."</div>
-					<div class='movie-rating'>Rating: (".$row[rating].")
+					<div class='movie-cast'>Director: ".$row[malecast]."</div>
+					<div class='movie-year'>Year: ".$row[year]."</div>
+					<div class='movie-rating'>IMDb : <span style='color:yellow;'>&#9733;</span> ".$row[rating]."/10
 						 ";
-							for ($i=0; $i < $row[rating]; $i++) { 
-								echo "<span style='color:yellow;'>&#9733;</span>";
-							}
+				
+							
 						echo "
 					</div>
 				</div>
