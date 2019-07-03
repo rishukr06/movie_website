@@ -34,7 +34,7 @@
 
 		<nav class="nav-menu">
 			<div style="float: left;color:#fff;font-family: 'Pacifico', cursive; font-size: 25px;margin-top: -8px;">R2D2</div>
-			<a href="/PHP/R2D2/">HOME</a>
+			<a href="">HOME</a>
 			<a href="#" onclick="alert('link under-development contact Rishu kumar')">ABOUT</a>
 			<a href="#contact">CONTACT</a>
 		</nav>
@@ -42,7 +42,7 @@
 	<div class="tilte">
 		<p id="title">Top Rated Movies</p>
 	</div>
-	<div class='movie-box'>
+	<div class='row movie-box' style="justify-content:center">
 	<?php
 	include 'search_result.php';
 	?>
