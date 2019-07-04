@@ -12,6 +12,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>R2D2</title>
 	<meta charset="utf-8">
 	<meta author="Rishu kumar" content="R2D2 assigement">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
